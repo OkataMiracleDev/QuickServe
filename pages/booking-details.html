@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../style/styles.css" rel="stylesheet">
+  <title>Quickserve Booking Details</title>
+</head>
+<body class="bg-[#e7e7e7] flex flex-col lg:flex-row flex-wrap ml-5 mr-5 mt-5 pb-24 md:pb-28 lg:pb-10">
+  <nav class="pc-nav fixed top-3 left-5 z-50 hidden lg:flex flex-col w-1/4 h-screen pr-5">
+    <header class="flex flex-row items-center">
+        <div class="bg-[#5F4FFF] w-15 h-15 rounded-xl flex justify-center items-center">
+          <img src="../images/after-effects/logomark_00000.png" alt="" class="w-2/3 h-2/3">
+        </div>
+        <h1 class="font-bold text-3xl ml-4">Quickserve</h1>
+    </header>
+    <section class="user-profile bg-[#F5F5FA] mt-5 w-full h-44 rounded-3xl flex flex-col p-7">
+      <div class="flex flex-row gap-5">
+        <div class="user-img w-1/3">
+          <img src="../images/user/photo-1472099645785-5658abf4ff4e.jfif" alt="" class="w-18 h-18" style="clip-path: circle();">
+
+        </div>
+        <div class="user-account-status flex flex-col justify-between">
+          <h1 class="text-xl font-bold">John Doe</h1>
+          <div class="account-status flex felx-row items-center gap-2">
+            <p class="account-status font-semibold bg-orange-100 text-yellow-700 rounded-2xl px-2 py-1">Premium</p>
+            <p class="rating font-semibold"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+          </div>
+        </div>
+      </div>
+      <div class="user-finance-info mt-2 flex flex-row items-center gap-2">
+        <div class="flex flex-col justify-between items-center w-1/3">
+          <h1 class="booking-number text-lg font-bold">24</h1>
+          <p class="bookings text-xs font-light text-gray-500 font-[poppins]">Bookings</p>
+        </div>
+        <div class="flex flex-col justify-between items-center w-1/3">
+          <h1 class="commissions-number text-lg font-bold">$1,240</h1>
+          <p class="commissions text-xs font-light text-gray-500 font-[poppins]">Commisssions</p>
+        </div>
+        <div class="flex flex-col justify-between items-center w-1/3">
+          <h1 class="reviews-number text-lg font-bold">12</h1>
+          <p class="reviews text-xs font-light text-gray-500 font-[poppins]">Reviews</p>
+        </div>
+      </div>
+    </section>
+    <section class="navigation mt-5 h-80 overflow-y-scroll scrollbar always-show-scrollbar rounded-scrollbar scrollbar-thumb-gray-500 lg:scrollbar-track-[#F5F5FA]">
+      <div class="pr-5  flex flex-col justify-between gap-4">
+        <a href="../index.html" class="nav-link flex flex-row items-center gap-4 hover:bg-[#F5F5FA] rounded-2xl px-5 py-3">
+          <div class="icon">
+            <iconify-icon icon="lucide:home" class="text-3xl relative" style="color: gray;"></iconify-icon>
+          </div>
+          <p class="text-xl font-bold" style="color: gray;">Home</p>
+        </a>
+        <a href="#" class="nav-link flex flex-row items-center gap-4 hover:bg-[#F5F5FA] rounded-2xl px-5 py-3">
+          <div class="icon">
+            <iconify-icon icon="uil:calender" class="text-3xl relative" style="color: gray;"></iconify-icon>
+          </div>
+          <p class="text-xl font-bold" style="color: gray;">Bookings</p>
+        </a>
+        <a href="#" class="nav-link flex flex-row items-center gap-4 hover:bg-[#F5F5FA] rounded-2xl px-5 py-3">
+          <div class="icon">
+            <iconify-icon icon="si:chat-line" class="text-3xl relative" style="color: gray;"></iconify-icon>
+          </div>
+          <p class="text-xl font-bold" style="color: gray;">Messages</p>
+        </a>
+        <a href="#" class="nav-link flex flex-row items-center gap-4 hover:bg-[#F5F5FA] rounded-2xl px-5 py-3">
+          <div class="icon">
+            <iconify-icon icon="gg:bookmark" class="text-3xl relative" style="color: gray;"></iconify-icon>
+          </div>
+          <p class="text-xl font-bold" style="color: gray;">Bookmarks</p>
+        </a>
+        <a href="#" class="nav-link flex flex-row items-center gap-4 hover:bg-[#F5F5FA] rounded-2xl px-5 py-3">
+          <div class="icon">
+            <iconify-icon icon="iconamoon:profile-light" class="text-3xl relative" style="color: gray;"></iconify-icon>
+          </div>
+          <p class="text-xl font-bold" style="color: gray;">Profile</p>
+        </a>
+        <a href="#" class="nav-link flex flex-row items-center gap-4 hover:bg-[#F5F5FA] rounded-2xl px-5 py-3">
+          <div class="icon">
+            <iconify-icon icon="ion:settings-outline" class="text-3xl relative" style="color: gray;"></iconify-icon>
+          </div>
+          <p class="text-xl font-bold" style="color: gray;">Settings</p>
+        </a>
+      </div>
+    </section>
+    <section class="mt-6 lg:pl-5 lg:pr-5 w-full flex flex-col items-center rounded-xl bg-linear-to-tr from-violet-500 to-blue-400">
+      <h1 class="mt-3 font-bold text-xl">Become a Provider</h1>
+      <p class="mt-2 text-sm text-center">Start earning by offering your services to thousands of customers.</p>
+      <button class=" mt-4 mb-4 rounded-3xl bg-[#F5F5FA]">
+        <p class="px-4 py-2 text-[#6b5ff2]">Apply Now</p>
+      </button>
+    </section>
+  </nav>
+  <section class="main-sec mt-16 lg:mt-0 flex flex-col w-full h-full lg:w-3/4 lg:ml-[25%]">
+    <header class="h-20 fixed top-0 left-0 w-full z-50 bg-white flex lg:hidden flex-row items-center px-4 py-2 shadow">
+      <div class="flex flex-row justify-end items-center">
+        <a href="/pages/bookings.html" class="flex items-center absolute left-4">
+           <iconify-icon icon="ion:arrow-back" class="text-2xl" style="color: gray;"></iconify-icon>
+        </a>
+      </div>
+      <div class="flex w-full justify-center items-center">
+        <h1 class="font-bold text-lg flex">Booking Details</h1>
+      </div>
+    </header>
+    <header class="Pc-header hidden lg:flex flex-row justify-between items-center">
+      <div class="flex flex-row justify-end items-center">
+        <a href="/pages/bookings.html" class="flex items-center ">
+           <iconify-icon icon="ion:arrow-back" class="text-2xl" style="color: gray;"></iconify-icon>
+        </a>
+      </div>
+      <div class="flex w-full justify-center items-center">
+        <h1 class="font-bold text-lg flex">Booking Details</h1>
+      </div>
+    </header>
+    <section class="service-details-container mt-3 w-full px-6 py-4 bg-[#F5F5FA] rounded-2xl flex flex-col">
+        <div class="service-details flex flex-row pb-6 border-b border-b-gray-400">
+            <div class="service-info w-7/8 flex flex-col">
+                <h1 class="service text-xl lg:text-2xl">Electrician</h1>
+                <p class="service-breakdown mt-2 text-sm text-gray-500">Professional electrician service by John Doe</p>
+            </div>
+            <div class="provider-sorter flex justify-end w-full">
+              <button class="bg-purple-100 rounded-3xl px-4 py-2 absolute drop-shadow-2sl">
+                <p class="text-xs md:text-sm font-bold text-[#6b5ff2]">Confirmed</p>
+              </button>
+            </div>
+        </div>        
+        <div class="service-time-location-fee mt-4 flex flex-col gap-4">
+          <div class="service-time-container flex flex-row gap-5 items-center">
+            <iconify-icon icon="lucide:calendar" class="text-2xl" style="color: gray;"></iconify-icon>
+            <div class="service-time flex flex-col gap-1">
+              <p class="date text-lg">Today, Jul 26</p>
+              <p class="time text-base text-gray-500">2:00 PM - 4:00 PM</p>
+            </div>
+          </div>
+          <div class="service-location-container flex flex-row gap-4 items-center">
+            <iconify-icon icon="mynaui:location" class="text-3xl" style="color: gray;"></iconify-icon>
+            <div class="service-location flex flex-col gap-1">
+              <p class="text-lg">Service Location</p>
+              <p class="location text-base text-gray-500">123 Main St, Downtown</p>
+            </div>
+          </div>
+          <div class="service-price-container flex flex-row gap-4 items-center">
+            <iconify-icon icon="mynaui:dollar" class="text-3xl" style="color: gray;"></iconify-icon>
+            <div class="service-price flex flex-col gap-1">
+              <p class="price text-lg">$85</p>
+              <p class="servie-duration text-base text-gray-500">2 hours service</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="service-provider-container mt-3 w-full px-6 py-4 bg-[#F5F5FA] rounded-2xl flex flex-col">
+      <h1 class="title text-xl lg:text-2xl">Service Provider</h1>
+      <div class="mt-2 provider-info flex flex-row gap-4 items-center">
+        <div class="provider-image-container">
+          <img src="/images/user/user.jpg" alt="Provider Image" class="provider-image w-20 h-20 rounded-full">
+        </div>
+        <div class="provider-details flex flex-col justify-center gap-0.5">
+          <h2 class="provider-name text-base lg:text-lg">John Doe</h2>
+          <p class="provider-rating text-sm lg:text-base w-fit rounded-2xl relative right-0"><span class="mr-1 text-xl lg:text-2xl" style="color: #FFD700; font: weight 400px;">★</span> 4.9 <span class="ml-2 text-base lg:text-lg text-gray-500">(125 reviews)</span></p>
+          <div class="provider-phone-number flex flex-row items-center gap-2">
+            <iconify-icon icon="ion:call-outline" class="text-lg lg:text-xl" style="color: gray;"></iconify-icon>
+            <p class="text-base lg:text-lg text-gray-500">+234 801 234 5678</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="booking-timeline-container mt-3 w-full px-6 py-4 bg-[#F5F5FA] rounded-2xl flex flex-col gap-4">
+      <div class="title flex flex-row items-center">
+        <h1 class="text-xl lg:text-2xl">Booking Timeline</h1>
+      </div>
+      <div class="booking-timeline flex flex-row items-center gap-4">
+        <div class="sorter w-2 lg:w-4 h-2 lg:h-4 bg-green-500 rounded-full"></div>
+        <div class="booking-sorter-and-booking-sorter-date flex flex-col gap-1">
+          <p class="booking-sorter text-base lg:text-lg">Booking Confirmed</p>
+          <p class="booking-sorter-date text-sm text-gray-500">March 10, 2024</p>
+        </div>
+      </div>
+    </section>
+    <section class="additional-information mt-3 w-full px-6 py-4 bg-[#F5F5FA] rounded-2xl flex flex-col gap-4">
+      <h1 class="title text-xl lg:text-2xl">Additional Information</h1>
+      <div class="additional-information-content flex flex-col gap-2">
+        <div class="booking-id flex flex-row justify-between items-center">
+          <p class="title text-base lg:text-lg text-gray-500">Booking ID</p>
+          <p class="id text-base lg:text-lg justify-end">#1</p>
+        </div>
+        <div class="service-duration flex flex-row justify-between items-center">
+          <p class="title text-base lg:text-lg text-gray-500">Service Duration</p>
+          <p class="duration text-base lg:text-lg justify-end">2 hours</p>
+        </div>
+        <div class="total-amount flex flex-row justify-between items-center">
+          <p class="title text-base lg:text-lg text-gray-500">Total Amount</p>
+          <p class="amount text-base lg:text-lg justify-end">$85</p>
+        </div>
+      </div>
+      </section>
+    <section class="contact-button-container mt-3 w-full bg-[#F5F5FA] px-4 py-4">
+        <a href="#" class="contact-button text-center">
+          <button class="w-full rounded-xl bg-[#e7e7e7]  flex flex-row justify-center items-center gap-2">
+            <iconify-icon icon="majesticons:chat-2-line" class="text-lg lg:text-xl" style="color: black;"></iconify-icon>
+            <p class="py-4 text-base lg:text-lg text-black">Contact</p>
+          </button>
+        </a>
+    </section>
+    <section class="pb-3 md:pl-5 md:pr-5 px-2 md:px-4 rounded-2xl fixed bottom-[1%] md:bottom-[2%] left-[2%] w-[96%] z-50 bg-white shadow-gray-700 shadow-2xl  mobile-nav flex flex-row justify-between items-center lg:hidden">
+      <a href="../index.html" class="nav-link flex flex-col items-center">
+        <div class="icon-circle flex flex-row justify-center items-center">
+          <div class="shape-circle w-9 h-9 bg-[#e7e7e7] absolute" style="clip-path: circle(); z-index: 0;"></div>
+          <iconify-icon icon="lucide:home" class="text-2xl relative" style="color: gray; z-index: 1;"></iconify-icon>
+        </div>
+        <p class="text-xs md:text-sm mt-2" style="color: gray;">Home</p>
+      </a>
+      <a href="bookings.html" class="nav-link flex flex-col items-center">
+        <div class="icon-circle flex flex-row justify-center items-center">
+          <div class="shape-circle w-9 h-9 bg-[#e7e7e7] absolute" style="clip-path: circle(); z-index: 0;"></div>
+          <iconify-icon icon="uil:calender" class="text-2xl relative" style="color: gray; z-index: 1;"></iconify-icon>
+        </div>
+        <p class="text-xs md:text-sm mt-2" style="color: gray;">Bookings</p>
+      </a>
+      <a href="#" class="nav-link flex flex-col items-center">
+        <div class="icon-circle flex flex-row justify-center items-center">
+          <div class="shape-circle w-9 h-9 bg-[#e7e7e7] absolute" style="clip-path: circle(); z-index: 0;"></div>
+          <iconify-icon icon="si:chat-line" class="text-2xl relative" style="color: gray; z-index: 1;"></iconify-icon>
+        </div>
+        <p class="text-xs md:text-sm mt-2" style="color: gray;">Messages</p>
+      </a>
+      <a href="#" class="nav-link flex flex-col items-center">
+        <div class="icon-circle flex flex-row justify-center items-center">
+          <div class="shape-circle w-9 h-9 bg-[#e7e7e7] absolute" style="clip-path: circle(); z-index: 0;"></div>
+          <iconify-icon icon="gg:bookmark" class="text-2xl relative" style="color: gray; z-index: 1;"></iconify-icon>
+        </div>
+        <p class="text-xs md:text-sm mt-2" style="color: gray;">Bookmarks</p>
+      </a>
+      <a href="#" class="nav-link flex flex-col items-center">
+        <div class="icon-circle flex flex-row justify-center items-center">
+          <div class="shape-circle w-9 h-9 bg-[#e7e7e7] absolute" style="clip-path: circle(); z-index: 0;"></div>
+          <iconify-icon icon="iconamoon:profile-light" class="text-2xl relative" style="color: gray; z-index: 1;"></iconify-icon>
+        </div>
+        <p class="text-xs md:text-sm mt-2" style="color: gray;">Profile</p>
+      </a>
+    </section>
+  </section>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+  <script src="/scripts/index.js"></script>
+</body>
+</html>

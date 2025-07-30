@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../style/styles.css" rel="stylesheet">
+  <title>Quickserve</title>
+</head>
+<body class="bg-[#e7e7e7] flex flex-col lg:flex-row flex-wrap ml-5 mr-5 mt-5 pb-24 md:pb-28 lg:pb-10">
+  <nav class="pc-nav fixed top-3 left-5 z-50 hidden lg:flex flex-col w-1/4 h-screen pr-5">
+    <header class="flex flex-row items-center">
+        <div class="bg-[#5F4FFF] w-15 h-15 rounded-xl flex justify-center items-center">
+          <img src="images/after-effects/logomark_00000.png" alt="" class="w-2/3 h-2/3">
+        </div>
+        <h1 class="font-bold text-3xl ml-4">Quickserve</h1>
+    </header>
+    <section class="user-profile bg-[#F5F5FA] mt-5 w-full h-44 rounded-3xl flex flex-col p-7">
+      <div class="flex flex-row gap-5">
+        <div class="user-img w-1/3">
+          <img src="/images/user/photo-1472099645785-5658abf4ff4e.jfif" alt="" class="w-18 h-18" style="clip-path: circle();">
+        </div>
+        <div class="user-account-status flex flex-col justify-between">
+          <h1 class="text-xl font-bold">John Doe</h1>
+          <div class="account-status flex felx-row items-center gap-2">
+            <p class="account-status font-semibold bg-orange-100 text-yellow-700 rounded-2xl px-2 py-1">Premium</p>
+            <p class="rating font-semibold"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+          </div>
+        </div>
+      </div>
+      <div class="user-finance-info mt-2 flex flex-row items-center gap-2">
+        <div class="flex flex-col justify-between items-center w-1/3">
+          <h1 class="booking-number text-lg font-bold">24</h1>
+          <p class="bookings text-xs font-light text-gray-500 font-[poppins]">Bookings</p>
+        </div>
+        <div class="flex flex-col justify-between items-center w-1/3">
+          <h1 class="commissions-number text-lg font-bold">$1,240</h1>
+          <p class="commissions text-xs font-light text-gray-500 font-[poppins]">Commisssions</p>
+        </div>
+        <div class="flex flex-col justify-between items-center w-1/3">
+          <h1 class="reviews-number text-lg font-bold">12</h1>
+          <p class="reviews text-xs font-light text-gray-500 font-[poppins]">Reviews</p>
+        </div>
+      </div>
+    </section>
+    <section class="navigation mt-5 h-80 overflow-y-scroll scrollbar always-show-scrollbar rounded-scrollbar scrollbar-thumb-gray-500 lg:scrollbar-track-[#F5F5FA]">
+      <div class="pr-5  flex flex-col justify-between gap-4">
+        <a href="index.html" class="nav-link flex flex-row items-center gap-4 hover:bg-[#F5F5FA] rounded-2xl px-5 py-3">
+          <div class="icon">
+            <iconify-icon icon="lucide:home" class="text-3xl relative" style="color: gray;"></iconify-icon>
+          </div>
+          <p class="text-xl font-bold" style="color: gray;">Home</p>
+        </a>
+        <a href="/pages/bookings.html" class="nav-link flex flex-row items-center gap-4 hover:bg-[#F5F5FA] rounded-2xl px-5 py-3">
+          <div class="icon">
+            <iconify-icon icon="uil:calender" class="text-3xl relative" style="color: gray;"></iconify-icon>
+          </div>
+          <p class="text-xl font-bold" style="color: gray;">Bookings</p>
+        </a>
+        <a href="#" class="nav-link flex flex-row items-center gap-4 hover:bg-[#F5F5FA] rounded-2xl px-5 py-3">
+          <div class="icon">
+            <iconify-icon icon="si:chat-line" class="text-3xl relative" style="color: gray;"></iconify-icon>
+          </div>
+          <p class="text-xl font-bold" style="color: gray;">Messages</p>
+        </a>
+        <a href="#" class="nav-link flex flex-row items-center gap-4 hover:bg-[#F5F5FA] rounded-2xl px-5 py-3">
+          <div class="icon">
+            <iconify-icon icon="gg:bookmark" class="text-3xl relative" style="color: gray;"></iconify-icon>
+          </div>
+          <p class="text-xl font-bold" style="color: gray;">Bookmarks</p>
+        </a>
+        <a href="#" class="nav-link flex flex-row items-center gap-4 hover:bg-[#F5F5FA] rounded-2xl px-5 py-3">
+          <div class="icon">
+            <iconify-icon icon="iconamoon:profile-light" class="text-3xl relative" style="color: gray;"></iconify-icon>
+          </div>
+          <p class="text-xl font-bold" style="color: gray;">Profile</p>
+        </a>
+        <a href="#" class="nav-link flex flex-row items-center gap-4 hover:bg-[#F5F5FA] rounded-2xl px-5 py-3">
+          <div class="icon">
+            <iconify-icon icon="ion:settings-outline" class="text-3xl relative" style="color: gray;"></iconify-icon>
+          </div>
+          <p class="text-xl font-bold" style="color: gray;">Settings</p>
+        </a>
+      </div>
+    </section>
+    <section class="mt-6 lg:pl-5 lg:pr-5 w-full flex flex-col items-center rounded-xl bg-linear-to-tr from-violet-500 to-blue-400">
+      <h1 class="mt-3 font-bold text-xl">Become a Provider</h1>
+      <p class="mt-2 text-sm text-center">Start earning by offering your services to thousands of customers.</p>
+      <button class=" mt-4 mb-4 rounded-3xl bg-[#F5F5FA]">
+        <p class="px-4 py-2 text-[#6b5ff2]">Apply Now</p>
+      </button>
+    </section>
+  </nav>
+  <section class="main-sec mt-14 lg:mt-0 flex flex-col w-full h-full lg:w-3/4 lg:ml-[25%]">
+    <header class="h-20 fixed top-0 left-0 w-full z-50 bg-white flex lg:hidden flex-row justify-between items-center px-4 py-2 shadow">
+      <div class="flex flex-row items-center">
+        <div class="bg-[#5F4FFF] w-10 h-10 flex justify-center items-center" style="clip-path: circle();">
+          <img src="../images/after-effects/logomark_00000.png" alt="" class="w-2/3 h-2/3">
+        </div>
+        <h1 class="font-bold text-lg ml-2">Quickserve</h1>
+      </div>
+      <div class="flex flex-row items-center gap-1">
+        <div class="bg-gray-200 w-9 h-9 flex justify-center items-center" style="clip-path: circle();">
+          <a href="#" class="flex justify-center items-center">
+           <iconify-icon icon="lucide:bell" class="text-xl" style="color: gray;"></iconify-icon>
+          </a>
+        </div>
+        <div class="h-full flex flex-row md:hidden">
+          <div class="bg-[#ff0000] w-4 h-4 flex justify-center items-center absolute top-[25%] right-[25%]" style="clip-path: circle();">
+            <p class="text-white font-[poppins] text-xs font-bold">3</p>
+          </div>
+        </div>
+        <div class="bg-[#FFD700] w-9 h-9 flex justify-center items-center" style="clip-path: circle();">
+          <a href="pages/signup.html">
+           <h1 class="text-lg text-[#5F4FFF]">+</h1>
+          </a>
+        </div>
+        <div class="bg-center bg-contain bg-no-repeat w-9 h-9 flex justify-center items-center" style="background-image: url(../images/user/photo-1472099645785-5658abf4ff4e.jfif); clip-path: circle();">
+        </div>
+      </div>
+    </header>
+    <header class="Pc-header hidden lg:flex flex-row justify-between items-center">
+      <div class="flex flex-row items-center">
+        <div class="bg-[#5F4FFF] w-10 h-10 flex justify-center items-center" style="clip-path: circle();">
+          <img src="images/after-effects/logomark_00000.png" alt="" class="w-2/3 h-2/3">
+        </div>
+        <h1 class="font-bold text-lg ml-2">Quickserve</h1>
+      </div>      
+      <div class="flex flex-row items-center gap-1">
+        <div class="bg-white w-9 h-9 flex justify-center items-center" style="clip-path: circle();">
+          <a href="#" class="flex justify-center items-center">
+           <iconify-icon icon="lucide:bell" class="text-xl" style="color: gray;"></iconify-icon>
+          </a>
+        </div>
+        <div class="bg-[#FFD700] w-9 h-9 flex justify-center items-center" style="clip-path: circle();">
+          <a href="pages/signup.html">
+           <h1 class="text-lg text-[#5F4FFF]">+</h1>
+          </a>
+        </div>
+        <div class="bg-center bg-contain bg-no-repeat w-9 h-9 flex justify-center items-center" style="background-image: url(images/user/photo-1472099645785-5658abf4ff4e.jfif); clip-path: circle();">
+        </div>
+      </div>
+    </header>
+    <section class="mt-8 lg:mt-16 lg:pl-5">      
+         <div class="search flex flex-col lg:flex-row lg:gap-4">
+          <form class=" w-full lg:w-4/7" action="/search" method="get">
+            <input class="search bg-[#F5F5FA] w-full h-16 rounded-xl text-center placeholder:text-gray-400 placeholder:text-sm md:placeholder:text-base lg:placeholder:text-lg placeholder:px-4" type="text" name="query" placeholder="🔍 Search for services (electrician, tutor,...)"></input>
+          </form>
+          <form class="w-full lg:w-2/7" action="/search" method="get">
+            <input class="location bg-[#F5F5FA] w-full  h-16 rounded-xl text-center placeholder:text-gray-400 hidden lg:flex" type="text" name="query" placeholder="📍 Location"></input>
+          </form>
+          <button class="bg-[#F5F5FA] text-black px-4 py-1 w-full lg:w-1/7 h-8 lg:h-full mt-4 lg:mt-0 rounded-2xl flex flex-row justify-center items-center gap-1" type="button">
+            <img src="images/icons/filter.png" alt="" class="w-4 h-full lg:h-4">
+            <p class="text-base font-semibold">Filters</p></button>
+        </div>
+    </section>
+    <section class="services mt-8 lg:pl-5">
+      <div class="bg-[#F5F5FA] w-full h-36 lg:h-72 rounded-2xl flex flex-col justify-center items-center">
+        <div class="gap-4 items-center w-full overflow-x-scroll lg:overflow-x-visible pl-4 pr-4 scrollbar always-show-scrollbar rounded-scrollbar scrollbar-thumb-gray-500 scrollbar-track-gray-200 lg:scrollbar-track-[#F5F5FA]">
+          <div class="pb-[10px] lg:pb-0 grid grid-flow-col lg:grid-flow-row grid-cols-max lg:grid-cols-6 lg:grid-rows-2 gap-4 items-center w-full">
+            <button class="bg-[#efefef] hover:bg-[#d1d1d1] flex flex-col justify-center items-center h-24 lg:h-32 w-20 lg:w-28 rounded-2xl">
+              <p class="text-xl mb-2 bg-[#F5F5FA] rounded-xl p-1">⚡</p>
+              <p class="text-sm mb-3">Electrician</p>
+            </button>
+            <button class="bg-[#efefef] hover:bg-[#d1d1d1] flex flex-col justify-center items-center h-24 lg:h-32 w-20 lg:w-28 rounded-2xl">
+              <p class="text-xl mb-2 bg-[#F5F5FA] rounded-xl p-1">✂️</p>
+              <p class="text-sm mb-3">Stylist</p>
+            </button>
+            <button class="bg-[#efefef] hover:bg-[#d1d1d1] flex flex-col justify-center items-center h-24 lg:h-32 w-20 lg:w-28 rounded-2xl">
+              <p class="text-xl mb-2 bg-[#F5F5FA] rounded-xl p-1">🎓</p>
+              <p class="text-sm mb-3">Tutor</p>
+            </button>
+            <button class="bg-[#efefef] hover:bg-[#d1d1d1] flex flex-col justify-center items-center h-24 lg:h-32 w-20 lg:w-28 rounded-2xl">
+              <p class="text-xl mb-2 bg-[#F5F5FA] rounded-xl p-1">🧹</p>
+              <p class="text-sm mb-3">Cleaning</p>
+            </button>
+            <button class="bg-[#efefef] hover:bg-[#d1d1d1] flex flex-col justify-center items-center h-24 lg:h-32 w-20 lg:w-28 rounded-2xl">
+              <p class="text-xl mb-2 bg-[#F5F5FA] rounded-xl p-1">🔧</p>
+              <p class="text-sm mb-3">Plumbing</p>
+            </button>
+            <button class="bg-[#efefef] hover:bg-[#d1d1d1] flex flex-col justify-center items-center h-24 lg:h-32 w-20 lg:w-28 rounded-2xl">
+              <p class="text-xl mb-2 bg-[#F5F5FA] rounded-xl p-1">🎨</p>
+              <p class="text-sm mb-3">Painting</p>
+            </button>
+            <button class="bg-[#efefef] hover:bg-[#d1d1d1] flex flex-col justify-center items-center h-24 lg:h-32 w-20 lg:w-28 rounded-2xl">
+              <p class="text-xl mb-2 bg-[#F5F5FA] rounded-xl p-1">💻</p>
+              <p class="text-sm">Tech <br>Support</p>
+            </button>
+            <button class="bg-[#efefef] hover:bg-[#d1d1d1] flex flex-col justify-center items-center h-24 lg:h-32 w-20 lg:w-28 rounded-2xl">
+              <p class="text-xl mb-2 bg-[#F5F5FA] rounded-xl p-1">🚗</p>
+              <p class="text-sm">Car <br> Wash</p>
+            </button>
+            <button class="bg-[#efefef] hover:bg-[#d1d1d1] flex flex-col justify-center items-center h-24 lg:h-32 w-20 lg:w-28 rounded-2xl">
+              <p class="text-xl mb-4 bg-[#F5F5FA] rounded-xl p-1">📱</p>
+              <p class="text-sm">Phone Repair</p>
+            </button>
+            <button class="bg-[#efefef] hover:bg-[#d1d1d1] flex flex-col justify-center items-center h-24 lg:h-32 w-20 lg:w-28 rounded-2xl">
+              <p class="text-xl mb-4 bg-[#F5F5FA] rounded-xl p-1">🧑‍🍳</p>
+              <p class="text-sm">Chef</p>
+            </button>
+          </div>
+        </div>  
+    </section>
+    <section class=" mt-4 lg:pl-5 lg:pr-5 w-full Top-rated-services flex lg:hidden flex-col justify-center">
+      <div class="flex flex-row justify-between">
+        <h1 class="text-lg font-bold">Top Rated Services</h1>
+        <a href="#" class="font-[inter] font-bold text-[#6b5ff2]">View All</a>
+      </div>
+      <div class="mt-4 services-grid grid grid-flow-row grid-rows-4 lg:grid-rows-2 lg:grid-cols-2 gap-2">
+        <div class="booking w-full bg-[#F5F5FA] flex flex-col justify-center gap-1 rounded-2xl">
+          <div class="description flex flex-row justify-center gap-4">
+            <div class="image w-1/3 py-6 pl-3">
+              <img src="images/user/user.jpg" alt="" class="rounded-2xl md:h-full">
+            </div>
+            <div class="description w-1/3 flex flex-col py-7">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2">Electrician</p>
+              <p class="rating mt-2 font-semibold"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+              <p class="availability text-green-400 mt-1 w-32">☉ Available now</p>
+            </div>
+            <div class="book-price w-1/3 flex flex-col justify-between items-end py-7 mr-4">
+              <p class="price font-bold">$80/hr</p>
+            </div>
+          </div>
+          <div class="book-btn flex mb-3 w-full">
+            <a href="/pages/service.html" class="w-full px-2 md:px-4">
+              <button class="rounded-xl bg-[#6b5ff2] w-full">
+                <p class="py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="booking w-full bg-[#F5F5FA] flex flex-col justify-center gap-1 rounded-2xl">
+          <div class="description flex flex-row justify-center gap-4">
+            <div class="image w-1/3 py-6 pl-3">
+              <img src="images/user/user.jpg" alt="" class="rounded-2xl md:h-full">
+            </div>
+            <div class="description w-1/3 flex flex-col py-7">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2">Stylist</p>
+              <p class="rating mt-2 font-semibold"><span style="color: #FFD700; font: weight 500px;">★</span> 4.6</p>
+              <p class="availability text-green-400 mt-1 w-32">☉ Available now</p>
+            </div>
+            <div class="book-price w-1/3 flex flex-col justify-between items-end py-7 mr-4">
+              <p class="price font-bold">$100/Sh</p>
+            </div>
+          </div>
+          <div class="book-btn flex mb-3 w-full">
+            <a href="/pages/service.html" class="w-full px-2 md:px-4">
+              <button class="rounded-xl bg-[#6b5ff2] w-full">
+                <p class="py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="booking w-full bg-[#F5F5FA] flex flex-col justify-center gap-1 rounded-2xl">
+          <div class="description flex flex-row justify-center gap-4">
+            <div class="image w-1/3 py-6 pl-3">
+              <img src="images/user/user.jpg" alt="" class="rounded-2xl md:h-full">
+            </div>
+            <div class="description w-1/3 flex flex-col py-7">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2">Tutor</p>
+              <p class="rating mt-2 font-semibold"><span style="color: #FFD700; font: weight 500px;">★</span> 4.7</p>
+              <p class="availability text-green-400 mt-1 w-32">☉ Available now</p>
+            </div>
+            <div class="book-price w-1/3 flex flex-col justify-between items-end py-7 mr-4">
+              <p class="price font-bold">$50/hr</p>
+            </div>
+          </div>
+          <div class="book-btn flex mb-3 w-full">
+            <a href="/pages/service.html" class="w-full px-2 md:px-4">
+              <button class="rounded-xl bg-[#6b5ff2] w-full">
+                <p class="py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="booking w-full bg-[#F5F5FA] flex flex-col justify-center gap-1 rounded-2xl">
+          <div class="description flex flex-row justify-center gap-4">
+            <div class="image w-1/3 py-6 pl-3">
+              <img src="images/user/user.jpg" alt="" class="rounded-2xl md:h-full">
+            </div>
+            <div class="description w-1/3 flex flex-col py-7">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2">Cleaner</p>
+              <p class="rating mt-2 font-semibold"><span style="color: #FFD700; font: weight 500px;">★</span> 4.8</p>
+              <p class="availability text-green-400 mt-1 w-32">☉ Available now</p>
+            </div>
+            <div class="book-price w-1/3 flex flex-col justify-between items-end py-7 mr-4">
+              <p class="price font-bold">$100/Sh</p>
+            </div>
+          </div>
+          <div class="book-btn flex mb-3 w-full">
+            <a href="/pages/service.html" class="w-full px-2 md:px-4">
+              <button class="rounded-xl bg-[#6b5ff2] w-full">
+                <p class="py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=" mt-4 lg:pl-5 lg:pr-5 w-full Top-rated-services hidden lg:flex flex-col justify-center">
+      <div class="flex flex-row justify-between">
+        <h1 class="text-lg font-bold">Top Rated Services</h1>
+        <a href="#" class="font-[inter] font-bold text-[#6b5ff2]">View All</a>
+      </div>
+      <div class="mt-4 services-grid grid grid-flow-row grid-rows-2 grid-cols-3 gap-4">
+        <div class="booking h-72 w-full bg-[#F5F5FA] flex flex-col justify-center gap-4 rounded-2xl">
+          <div class="image-ratings-availaiblity h-1/2 flex flex-col bg-cover bg-center bg-no-repeat rounded-t-2xl" style="background-image: url(/images/user/photo-1472099645785-5658abf4ff4e.jfif);">
+            <div class="flex justify-end mr-2">
+              <p class="rating mt-2 font-semibold text-sm w-fit px-4 py-2 text-center bg-yellow-200 rounded-2xl relative right-0"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+            </div>
+            <div class="flex relative top-9 left-2">
+              <p class="availability text-[#F5F5FA] text-sm w-fit h-fit bg-green-400 rounded-2xl text-center px-4 py-2">☉ Available now</p>
+            </div>
+          </div>
+          <div class="description h-1/2 flex flex-col ml-4 mt-2">
+            <div class="flex flex-col">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2 text-gray-500">Electrician</p>
+            </div>
+          <div class="book-price flex flex-row justify-between items-center mt-5 pr-4">
+            <p class="price font-bold">$80/hr</p>
+            <a href="/pages/service.html">
+              <button class="rounded-3xl bg-[#6b5ff2]">
+                <p class="px-4 py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="booking h-72 w-full bg-[#F5F5FA] flex flex-col justify-center gap-4 rounded-2xl">
+          <div class="image-ratings-availaiblity h-1/2 flex flex-col bg-cover bg-center bg-no-repeat rounded-t-2xl" style="background-image: url(/images/user/photo-1472099645785-5658abf4ff4e.jfif);">
+            <div class="flex justify-end mr-2">
+              <p class="rating mt-2 font-semibold text-sm w-fit px-4 py-2 text-center bg-yellow-200 rounded-2xl relative right-0"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+            </div>
+            <div class="flex relative top-9 left-2">
+              <p class="availability text-[#F5F5FA] text-sm w-fit h-fit bg-green-400 rounded-2xl text-center px-4 py-2">☉ Available now</p>
+            </div>
+          </div>
+          <div class="description h-1/2 flex flex-col ml-4 mt-2">
+            <div class="flex flex-col">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2 text-gray-500">Electrician</p>
+            </div>
+          <div class="book-price flex flex-row justify-between items-center mt-5 pr-4">
+            <p class="price font-bold">$80/hr</p>
+            <a href="/pages/service.html">
+              <button class="rounded-3xl bg-[#6b5ff2]">
+                <p class="px-4 py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="booking h-72 w-full bg-[#F5F5FA] flex flex-col justify-center gap-4 rounded-2xl">
+          <div class="image-ratings-availaiblity h-1/2 flex flex-col bg-cover bg-center bg-no-repeat rounded-t-2xl" style="background-image: url(/images/user/photo-1472099645785-5658abf4ff4e.jfif);">
+            <div class="flex justify-end mr-2">
+              <p class="rating mt-2 font-semibold text-sm w-fit px-4 py-2 text-center bg-yellow-200 rounded-2xl relative right-0"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+            </div>
+            <div class="flex relative top-9 left-2">
+              <p class="availability text-[#F5F5FA] text-sm w-fit h-fit bg-green-400 rounded-2xl text-center px-4 py-2">☉ Available now</p>
+            </div>
+          </div>
+          <div class="description h-1/2 flex flex-col ml-4 mt-2">
+            <div class="flex flex-col">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2 text-gray-500">Electrician</p>
+            </div>
+          <div class="book-price flex flex-row justify-between items-center mt-5 pr-4">
+            <p class="price font-bold">$80/hr</p>
+            <a href="/pages/service.html">
+              <button class="rounded-3xl bg-[#6b5ff2]">
+                <p class="px-4 py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="booking h-72 w-full bg-[#F5F5FA] flex flex-col justify-center gap-4 rounded-2xl">
+          <div class="image-ratings-availaiblity h-1/2 flex flex-col bg-cover bg-center bg-no-repeat rounded-t-2xl" style="background-image: url(/images/user/photo-1472099645785-5658abf4ff4e.jfif);">
+            <div class="flex justify-end mr-2">
+              <p class="rating mt-2 font-semibold text-sm w-fit px-4 py-2 text-center bg-yellow-200 rounded-2xl relative right-0"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+            </div>
+            <div class="flex relative top-9 left-2">
+              <p class="availability text-[#F5F5FA] text-sm w-fit h-fit bg-green-400 rounded-2xl text-center px-4 py-2">☉ Available now</p>
+            </div>
+          </div>
+          <div class="description h-1/2 flex flex-col ml-4 mt-2">
+            <div class="flex flex-col">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2 text-gray-500">Electrician</p>
+            </div>
+          <div class="book-price flex flex-row justify-between items-center mt-5 pr-4">
+            <p class="price font-bold">$80/hr</p>
+            <a href="/pages/service.html">
+              <button class="rounded-3xl bg-[#6b5ff2]">
+                <p class="px-4 py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="booking h-72 w-full bg-[#F5F5FA] flex flex-col justify-center gap-4 rounded-2xl">
+          <div class="image-ratings-availaiblity h-1/2 flex flex-col bg-cover bg-center bg-no-repeat rounded-t-2xl" style="background-image: url(/images/user/photo-1472099645785-5658abf4ff4e.jfif);">
+            <div class="flex justify-end mr-2">
+              <p class="rating mt-2 font-semibold text-sm w-fit px-4 py-2 text-center bg-yellow-200 rounded-2xl relative right-0"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+            </div>
+            <div class="flex relative top-9 left-2">
+              <p class="availability text-[#F5F5FA] text-sm w-fit h-fit bg-green-400 rounded-2xl text-center px-4 py-2">☉ Available now</p>
+            </div>
+          </div>
+          <div class="description h-1/2 flex flex-col ml-4 mt-2">
+            <div class="flex flex-col">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2 text-gray-500">Electrician</p>
+            </div>
+          <div class="book-price flex flex-row justify-between items-center mt-5 pr-4">
+            <p class="price font-bold">$80/hr</p>
+            <a href="/pages/service.html">
+              <button class="rounded-3xl bg-[#6b5ff2]">
+                <p class="px-4 py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="booking h-72 w-full bg-[#F5F5FA] flex flex-col justify-center gap-4 rounded-2xl">
+          <div class="image-ratings-availaiblity h-1/2 flex flex-col bg-cover bg-center bg-no-repeat rounded-t-2xl" style="background-image: url(/images/user/photo-1472099645785-5658abf4ff4e.jfif);">
+            <div class="flex justify-end mr-2">
+              <p class="rating mt-2 font-semibold text-sm w-fit px-4 py-2 text-center bg-yellow-200 rounded-2xl relative right-0"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+            </div>
+            <div class="flex relative top-9 left-2">
+              <p class="availability text-[#F5F5FA] text-sm w-fit h-fit bg-green-400 rounded-2xl text-center px-4 py-2">☉ Available now</p>
+            </div>
+          </div>
+          <div class="description h-1/2 flex flex-col ml-4 mt-2">
+            <div class="flex flex-col">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2 text-gray-500">Electrician</p>
+            </div>
+          <div class="book-price flex flex-row justify-between items-center mt-5 pr-4">
+            <p class="price font-bold">$80/hr</p>
+            <a href="/pages/service.html">
+              <button class="rounded-3xl bg-[#6b5ff2]">
+                <p class="px-4 py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=" mt-8 lg:pl-5 lg:pr-5 w-full People-near-you flex lg:hidden flex-col justify-center">
+      <div class="flex flex-row justify-between">
+        <h1 class="text-lg font-bold">People Near You</h1>
+        <a href="#" class="font-[inter] font-bold text-[#6b5ff2]">View All</a>
+      </div>
+      <div class="mt-4 people-grid grid grid-flow-row grid-rows-3  lg:grid-rows-2 lg:grid-cols-2 gap-2">
+        <div class="booking w-full bg-[#F5F5FA] flex flex-col justify-center gap-1 rounded-2xl">
+          <div class="description flex flex-row justify-center gap-4">
+            <div class="image w-1/3 py-6 pl-3">
+              <img src="images/user/user.jpg" alt="" class="rounded-2xl md:h-full">
+            </div>
+            <div class="description w-1/3 flex flex-col py-7">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2">Plumbing</p>
+              <p class="rating mt-2 font-semibold"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+              <div class="location flex flex-row gap-1 items-center">
+                <iconify-icon icon="mynaui:location" class="text-base" style="color: gray;"></iconify-icon>
+                <p class="booking-location text-xs text-gray-500">2km away</p>
+              </div>
+              <p class="availability text-green-400 w-32">☉ Available now</p>
+            </div>
+            <div class="book-price w-1/3 flex flex-col justify-between items-end py-7 mr-4">
+              <p class="price font-bold">$70/hr</p>
+            </div>
+          </div>
+          <div class="book-btn flex mb-3 w-full">
+            <a href="/pages/service.html" class="w-full px-2 md:px-4">
+              <button class="rounded-xl bg-[#6b5ff2] w-full">
+                <p class="py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="booking w-full bg-[#F5F5FA] flex flex-col justify-center gap-1 rounded-2xl">
+          <div class="description flex flex-row justify-center gap-4">
+            <div class="image w-1/3 py-6 pl-3">
+              <img src="images/user/user.jpg" alt="" class="rounded-2xl md:h-full">
+            </div>
+            <div class="description w-1/3 flex flex-col py-7">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2">Plumbing</p>
+              <p class="rating mt-2 font-semibold"><span style="color: #FFD700; font: weight 500px;">★</span> 4.5</p>
+              <div class="location flex flex-row gap-1 items-center">
+                <iconify-icon icon="mynaui:location" class="text-base" style="color: gray;"></iconify-icon>
+                <p class="booking-location text-xs text-gray-500">0.2km away</p>
+              </div>
+              <p class="availability text-green-400 w-32">☉ Available now</p>
+            </div>
+            <div class="book-price w-1/3 flex flex-col justify-between items-end py-7 mr-4">
+              <p class="price font-bold">$50/hr</p>
+            </div>
+          </div>
+          <div class="book-btn flex mb-3 w-full">
+            <a href="/pages/service.html" class="w-full px-2 md:px-4">
+              <button class="rounded-xl bg-[#6b5ff2] w-full">
+                <p class="py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="booking w-full bg-[#F5F5FA] flex flex-col justify-center gap-1 rounded-2xl">
+          <div class="description flex flex-row justify-center gap-4">
+            <div class="image w-1/3 py-6 pl-3">
+              <img src="images/user/user.jpg" alt="" class="rounded-2xl md:h-full">
+            </div>
+            <div class="description w-1/3 flex flex-col py-7">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2">Electrician</p>
+              <p class="rating mt-2 font-semibold"><span style="color: #FFD700; font: weight 500px;">★</span> 3.2</p>
+              <div class="location flex flex-row gap-1 items-center">
+                <iconify-icon icon="mynaui:location" class="text-base" style="color: gray;"></iconify-icon>
+                <p class="booking-location text-xs text-gray-500">0.8km away</p>
+              </div>
+              <p class="availability text-green-400 w-32">☉ Available now</p>
+            </div>
+            <div class="book-price w-1/3 flex flex-col justify-between items-end py-7 mr-4">
+              <p class="price font-bold">$100/hr</p>
+            </div>
+          </div>
+          <div class="book-btn flex mb-3 w-full">
+            <a href="/pages/service.html" class="w-full px-2 md:px-4">
+              <button class="rounded-xl bg-[#6b5ff2] w-full">
+                <p class="py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=" mt-8 lg:pl-5 lg:pr-5 w-full People-near-you hidden lg:flex flex-col justify-center">
+      <div class="flex flex-row justify-between">
+        <h1 class="text-lg font-bold">People Near You</h1>
+        <a href="#" class="font-[inter] font-bold text-[#6b5ff2]">View All</a>
+      </div>
+      <div class="mt-4 services-grid grid grid-flow-row grid-rows-2 grid-cols-3 gap-4">
+        <div class="booking h-80 w-full bg-[#F5F5FA] flex flex-col justify-center gap-4 rounded-2xl">
+          <div class="image-ratings-availaiblity h-1/2 flex flex-col bg-cover bg-center bg-no-repeat rounded-t-2xl" style="background-image: url(/images/user/photo-1472099645785-5658abf4ff4e.jfif);">
+            <div class="flex justify-end mr-2">
+              <p class="rating mt-2 font-semibold text-sm w-fit px-4 py-2 text-center bg-yellow-200 rounded-2xl relative right-0"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+            </div>
+            <div class="flex relative top-9 left-2">
+              <p class="availability text-[#F5F5FA] text-sm w-fit h-fit bg-green-400 rounded-2xl text-center px-4 py-2">☉ Available now</p>
+            </div>
+          </div>
+          <div class="description h-1/2 flex flex-col ml-4 mt-2">
+            <div class="flex flex-col">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2 text-gray-500">Electrician</p>
+              <p class="location text-xs text-gray-500 w-32 mt-2">2km away</p>
+            </div>
+          <div class="book-price flex flex-row justify-between items-center mt-5 pr-4">
+            <p class="price font-bold">$80/hr</p>
+            <a href="/pages/service.html">
+              <button class="rounded-3xl bg-[#6b5ff2]">
+                <p class="px-4 py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="booking h-80 w-full bg-[#F5F5FA] flex flex-col justify-center gap-4 rounded-2xl">
+          <div class="image-ratings-availaiblity h-1/2 flex flex-col bg-cover bg-center bg-no-repeat rounded-t-2xl" style="background-image: url(/images/user/photo-1472099645785-5658abf4ff4e.jfif);">
+            <div class="flex justify-end mr-2">
+              <p class="rating mt-2 font-semibold text-sm w-fit px-4 py-2 text-center bg-yellow-200 rounded-2xl relative right-0"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+            </div>
+            <div class="flex relative top-9 left-2">
+              <p class="availability text-[#F5F5FA] text-sm w-fit h-fit bg-green-400 rounded-2xl text-center px-4 py-2">☉ Available now</p>
+            </div>
+          </div>
+          <div class="description h-1/2 flex flex-col ml-4 mt-2">
+            <div class="flex flex-col">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2 text-gray-500">Electrician</p>
+              <p class="location text-xs text-gray-500 w-32 mt-2">2km away</p>
+            </div>
+          <div class="book-price flex flex-row justify-between items-center mt-5 pr-4">
+            <p class="price font-bold">$80/hr</p>
+            <a href="/pages/service.html">
+              <button class="rounded-3xl bg-[#6b5ff2]">
+                <p class="px-4 py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="booking h-80 w-full bg-[#F5F5FA] flex flex-col justify-center gap-4 rounded-2xl">
+          <div class="image-ratings-availaiblity h-1/2 flex flex-col bg-cover bg-center bg-no-repeat rounded-t-2xl" style="background-image: url(/images/user/photo-1472099645785-5658abf4ff4e.jfif);">
+            <div class="flex justify-end mr-2">
+              <p class="rating mt-2 font-semibold text-sm w-fit px-4 py-2 text-center bg-yellow-200 rounded-2xl relative right-0"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+            </div>
+            <div class="flex relative top-9 left-2">
+              <p class="availability text-[#F5F5FA] text-sm w-fit h-fit bg-green-400 rounded-2xl text-center px-4 py-2">☉ Available now</p>
+            </div>
+          </div>
+          <div class="description h-1/2 flex flex-col ml-4 mt-2">
+            <div class="flex flex-col">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2 text-gray-500">Electrician</p>
+              <p class="location text-xs text-gray-500 w-32 mt-2">2km away</p>
+            </div>
+          <div class="book-price flex flex-row justify-between items-center mt-5 pr-4">
+            <p class="price font-bold">$80/hr</p>
+            <a href="/pages/service.html">
+              <button class="rounded-3xl bg-[#6b5ff2]">
+                <p class="px-4 py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="booking h-80 w-full bg-[#F5F5FA] flex flex-col justify-center gap-4 rounded-2xl">
+          <div class="image-ratings-availaiblity h-1/2 flex flex-col bg-cover bg-center bg-no-repeat rounded-t-2xl" style="background-image: url(/images/user/photo-1472099645785-5658abf4ff4e.jfif);">
+            <div class="flex justify-end mr-2">
+              <p class="rating mt-2 font-semibold text-sm w-fit px-4 py-2 text-center bg-yellow-200 rounded-2xl relative right-0"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+            </div>
+            <div class="flex relative top-9 left-2">
+              <p class="availability text-[#F5F5FA] text-sm w-fit h-fit bg-green-400 rounded-2xl text-center px-4 py-2">☉ Available now</p>
+            </div>
+          </div>
+          <div class="description h-1/2 flex flex-col ml-4 mt-2">
+            <div class="flex flex-col">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2 text-gray-500">Electrician</p>
+              <p class="location text-xs text-gray-500 w-32 mt-2">2km away</p>
+            </div>
+          <div class="book-price flex flex-row justify-between items-center mt-5 pr-4">
+            <p class="price font-bold">$80/hr</p>
+            <a href="/pages/service.html">
+              <button class="rounded-3xl bg-[#6b5ff2]">
+                <p class="px-4 py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="booking h-80 w-full bg-[#F5F5FA] flex flex-col justify-center gap-4 rounded-2xl">
+          <div class="image-ratings-availaiblity h-1/2 flex flex-col bg-cover bg-center bg-no-repeat rounded-t-2xl" style="background-image: url(/images/user/photo-1472099645785-5658abf4ff4e.jfif);">
+            <div class="flex justify-end mr-2">
+              <p class="rating mt-2 font-semibold text-sm w-fit px-4 py-2 text-center bg-yellow-200 rounded-2xl relative right-0"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+            </div>
+            <div class="flex relative top-9 left-2">
+              <p class="availability text-[#F5F5FA] text-sm w-fit h-fit bg-green-400 rounded-2xl text-center px-4 py-2">☉ Available now</p>
+            </div>
+          </div>
+          <div class="description h-1/2 flex flex-col ml-4 mt-2">
+            <div class="flex flex-col">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2 text-gray-500">Electrician</p>
+              <p class="location text-xs text-gray-500 w-32 mt-2">2km away</p>
+            </div>
+          <div class="book-price flex flex-row justify-between items-center mt-5 pr-4">
+            <p class="price font-bold">$80/hr</p>
+            <a href="/pages/service.html">
+              <button class="rounded-3xl bg-[#6b5ff2]">
+                <p class="px-4 py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+          </div>
+        </div>
+        <div class="booking h-80 w-full bg-[#F5F5FA] flex flex-col justify-center gap-4 rounded-2xl">
+          <div class="image-ratings-availaiblity h-1/2 flex flex-col bg-cover bg-center bg-no-repeat rounded-t-2xl" style="background-image: url(/images/user/photo-1472099645785-5658abf4ff4e.jfif);">
+            <div class="flex justify-end mr-2">
+              <p class="rating mt-2 font-semibold text-sm w-fit px-4 py-2 text-center bg-yellow-200 rounded-2xl relative right-0"><span style="color: #FFD700; font: weight 500px;">★</span> 4.9</p>
+            </div>
+            <div class="flex relative top-9 left-2">
+              <p class="availability text-[#F5F5FA] text-sm w-fit h-fit bg-green-400 rounded-2xl text-center px-4 py-2">☉ Available now</p>
+            </div>
+          </div>
+          <div class="description h-1/2 flex flex-col ml-4 mt-2">
+            <div class="flex flex-col">
+              <h1 class="name text-base font-bold w-32">John Doe</h1>
+              <p class="service text-sm w-32 mt-2 text-gray-500">Electrician</p>
+              <p class="location text-xs text-gray-500 w-32 mt-2">2km away</p>
+            </div>
+          <div class="book-price flex flex-row justify-between items-center mt-5 pr-4">
+            <p class="price font-bold">$80/hr</p>
+            <a href="/pages/service.html">
+              <button class="rounded-3xl bg-[#6b5ff2]">
+                <p class="px-4 py-2 font-bold text-white">Book</p>
+              </button>
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-6 lg:pl-5 lg:pr-5 w-full flex flex-col items-center rounded-xl bg-linear-to-tr from-violet-500 to-blue-400">
+      <h1 class="mt-3 font-bold text-xl">QuickServe Premium</h1>
+      <p class="mt-2 text-sm text-center">Unlock priority booking, exclusive discounts, and 24/7 customer support with our premium membership.</p>
+      <button class=" mt-4 mb-4 rounded-3xl bg-[#F5F5FA]">
+        <p class="px-4 py-2 text-[#6b5ff2]">Learn More &rarr;</p>
+      </button>
+    </section>
+    <section class="pb-3 md:pl-5 md:pr-5 px-2 md:px-4 rounded-2xl fixed bottom-[1%] md:bottom-[2%] left-[2%] w-[96%] z-50 bg-white shadow-gray-700 shadow-2xl  mobile-nav flex flex-row justify-between items-center lg:hidden">
+      <a href="index.html" class="nav-link flex flex-col items-center">
+        <div class="icon-circle flex flex-row justify-center items-center">
+          <div class="shape-circle w-9 h-9 bg-[#e7e7e7] absolute" style="clip-path: circle(); z-index: 0;"></div>
+          <iconify-icon icon="lucide:home" class="text-2xl relative" style="color: gray; z-index: 1;"></iconify-icon>
+        </div>
+        <p class="text-xs md:text-sm mt-2" style="color: gray;">Home</p>
+      </a>
+      <a href="pages/bookings.html" class="nav-link flex flex-col items-center">
+        <div class="icon-circle flex flex-row justify-center items-center">
+          <div class="shape-circle w-9 h-9 bg-[#e7e7e7] absolute" style="clip-path: circle(); z-index: 0;"></div>
+          <iconify-icon icon="uil:calender" class="text-2xl relative" style="color: gray; z-index: 1;"></iconify-icon>
+        </div>
+        <p class="text-xs md:text-sm mt-2" style="color: gray;">Bookings</p>
+      </a>
+      <a href="#" class="nav-link flex flex-col items-center">
+        <div class="icon-circle flex flex-row justify-center items-center">
+          <div class="shape-circle w-9 h-9 bg-[#e7e7e7] absolute" style="clip-path: circle(); z-index: 0;"></div>
+          <iconify-icon icon="si:chat-line" class="text-2xl relative" style="color: gray; z-index: 1;"></iconify-icon>
+        </div>
+        <p class="text-xs md:text-sm mt-2" style="color: gray;">Messages</p>
+      </a>
+      <a href="#" class="nav-link flex flex-col items-center">
+        <div class="icon-circle flex flex-row justify-center items-center">
+          <div class="shape-circle w-9 h-9 bg-[#e7e7e7] absolute" style="clip-path: circle(); z-index: 0;"></div>
+          <iconify-icon icon="gg:bookmark" class="text-2xl relative" style="color: gray; z-index: 1;"></iconify-icon>
+        </div>
+        <p class="text-xs md:text-sm mt-2" style="color: gray;">Bookmarks</p>
+      </a>
+      <a href="#" class="nav-link flex flex-col items-center">
+        <div class="icon-circle flex flex-row justify-center items-center">
+          <div class="shape-circle w-9 h-9 bg-[#e7e7e7] absolute" style="clip-path: circle(); z-index: 0;"></div>
+          <iconify-icon icon="iconamoon:profile-light" class="text-2xl relative" style="color: gray; z-index: 1;"></iconify-icon>
+        </div>
+        <p class="text-xs md:text-sm mt-2" style="color: gray;">Profile</p>
+      </a>
+    </section>
+  </section>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+  <script src="/scripts/index.js"></script>
+</body>
+</html>

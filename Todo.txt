@@ -1,0 +1,1 @@
+Change service.html to servic-details.html and reroute the directories it is mentioned in

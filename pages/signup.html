@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/styles.css" rel="stylesheet">
+    <title>Quickserve-Signup</title>
+</head>
+<body class="bg-[#e7e7e7] flex flex-col flex-wrap justify-center items-center pb-24">
+    <header class="flex flex-col mt-10 md:mt-14">
+        <div class="flex flex-row justify-center items-center">
+            <div class="w-16 h-16 bg-contain bg-center bg-no-repeat" style="background-image: url(../images/after-effects/Favicon_00000.png);"></div>
+            <h1 class="text-2xl font-bold font-[Poppins]">Quickserve</h1>
+        </div>
+        <p class="text-[gray] md:text-lg">Book trusted service providers easily.</p>
+    </header>
+    <section class="flex flex-col mt-6 px-5 py-4 rounded-2xl bg-[#FFFFFF] w-80 md:w-11/12">
+        <section class="personal-information flex flex-row">
+            <form class="flex flex-col gap-3 w-full">
+                <label for="full-name" class="mt-2 uppercase text-[gray] text-sm">full name</label>
+                <div class="flex flex-row bg-gray-200 px-4 py-4 rounded-xl border border-[gray] focus-within:border-2 focus-within:border-[#5F4FFF] justify-center items-center gap-2">
+                    <iconify-icon icon="carbon:user" class="text-xl relative" style="color: gray;"></iconify-icon>
+                    <input type="text" id="full-name" name="full-name" class="text-lg focus:outline-none" placeholder="Enter your full name">
+                </div>
+
+                <label for="email" class="mt-2 uppercase text-[gray] text-sm">email</label>
+                <div class="flex flex-row bg-gray-200 px-4 py-4 rounded-xl border border-[gray] focus-within:border-2 focus-within:border-[#5F4FFF] justify-center items-center gap-2">
+                    <iconify-icon icon="carbon:email" class="text-xl relative" style="color: gray;"></iconify-icon>
+                    <input type="text" id="email" name="email" class="text-lg focus:outline-none" placeholder="Enter your email">
+                </div>
+
+                <label for="password" class="mt-2 uppercase text-[gray] text-sm">password</label>
+                <div class="flex flex-row bg-gray-200 px-4 py-4 rounded-xl border border-[gray] focus-within:border-2 focus-within:border-[#5F4FFF] justify-center items-center gap-2">
+                    <iconify-icon icon="carbon:password" class="text-xl relative" style="color: gray;"></iconify-icon>
+                    <input type="password" id="password" name="password" class="text-lg focus:outline-none" placeholder="Enter your password">
+                </div>
+
+                <label for="confirm-password" class="mt-2 uppercase text-[gray] text-sm">confirm password</label>
+
+                <div class="flex flex-row bg-gray-200 px-4 py-4 rounded-xl border border-[gray] focus-within:border-2 focus-within:border-[#5F4FFF] justify-center items-center gap-2">
+                    <iconify-icon icon="carbon:password" class="text-xl relative" style="color: gray;"></iconify-icon>
+                    <input type="password" id="confirm-password" name="confirm-password" class="text-lg focus:outline-none" placeholder="Enter your password">
+                </div>
+            </form>
+        </section>
+        <section class="mt-8">
+            <button class="w-full bg-[#5F4FFF] lg:hover:bg-[#4F3FFF] text-[#FFFFFF] text-lg rounded-xl py-4">Sign Up</button>
+        </section>
+        <p class="m-6 text-center text-[gray]">—or continue with—</p>
+        <section class="bg-[#F5F5FA] rounded-xl py-4 px-1">
+            <div class="flex flex-row justify-between items-center gap-2 px-2">
+                <a href="#">
+                    <button class="w-20 bg-[#ffffff] rounded-xl text-[#5F4FFF] text-lg  py-4 px-2 flex flex-col justify-center items-center gap-1">
+                        <iconify-icon icon="simple-icons:google" class="text-xl relative" style="color: gray;"></iconify-icon>
+                        <p class="text-sm">Google</p>
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="w-20 bg-[#ffffff] rounded-xl text-[#5F4FFF] text-lg  py-4 px-2 flex flex-col justify-center items-center gap-1">
+                        <iconify-icon icon="simple-icons:facebook" class="text-xl relative" style="color: gray;"></iconify-icon>
+                        <p class="text-sm">Facebook</p>
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="w-20 bg-[#ffffff] rounded-xl text-[#5F4FFF] text-lg  py-4 px-2 flex flex-col justify-center items-center gap-1">
+                        <iconify-icon icon="simple-icons:apple" class="text-xl relative" style="color: gray;"></iconify-icon>
+                        <p class="text-sm">Apple</p>
+                    </button>
+                </a>
+            </div>
+
+        </section>
+    </section>
+    <section class="flex flex-row mt-6 gap-2">
+        <p>Already have an account?</p>
+        <a href="login.html" class="text-[#5F4FFF] font-bold underline"> Log In</a>
+    </section>
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+</body>
+</html>

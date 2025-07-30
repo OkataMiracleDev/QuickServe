@@ -1,0 +1,27 @@
+Based on the UI you provided in the screenshot, here are the **primary brand colors** used in the **QuickServe UI**:
+
+---
+
+## 🎨 Brand Colors (Extracted from Screenshot)
+
+| **Color Use**                         | **Hex Code** | **Description**                                                   |
+| ------------------------------------- | ------------ | ----------------------------------------------------------------- |
+| **Primary Button / Active Highlight** | `#6b5ff2`    | Bright Purple – used in buttons like "Home", "Book Now", and CTAs |
+| **Sidebar Background**                | `#F5F5FA`    | Soft Off-White – for card and sidebar backgrounds                 |
+| **Accent Green (Available Now Tag)**  | `#2DD36F`    | Vivid Green – availability status                                 |
+| **Text Color (Black)**                | `#1E1E1E`    | Neutral text for names and titles                                 |
+| **Secondary Text / Light Gray**       | `#7D7D7D`    | Subdued for pricing, labels, and small text                       |
+| **Card Background / Neutral Panel**   | `#FFFFFF`    | Clean white for service cards and containers                      |
+| **Gold Star / Ratings**               | `#FFD700`    | Classic gold – used in star icons for ratings                     |
+
+---
+
+## 🧩 Optional UI Suggestions
+
+* **Dark Mode Primary:** `#1B1C29` (if you plan dark mode)
+* **Hover Color for CTA:** Slightly darker shade of purple: `#4D3EDF`
+* **Secondary Button Background:** Soft Gray: `#E4E4EC`
+
+---
+
+Would you like a downloadable Tailwind config file or a custom Figma style guide created based on these colors?
