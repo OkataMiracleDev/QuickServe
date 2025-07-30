@@ -19,3 +19,7 @@
     "tailwind-scrollbar": "^4.0.2"
   }
 }
+"scripts": {
+  "build": "echo 'Nothing to build'"
+}
+
