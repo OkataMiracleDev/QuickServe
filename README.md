@@ -43,6 +43,6 @@ See the [LICENSE](LICENSE) file for details.
 
 ## 🙋‍♂️ Author
 
-Built by **[Your Name]** — a front-end developer learning full stack.
+Built by **Okata Miracle** — a front-end developer learning full stack.
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/miracle-okata-52a255375/)  
